@@ -10,7 +10,7 @@ export default function NasaPhoto() {
 
         async function fetchPhoto() {
             const res = await fetch(
-                `https://api.nasa.gov/planetary/apod?api_key=kb9jfAeRohuE9AQZOZq0XIBv5JMpCpiqr1WyBRVi`
+                `https://api.nasa.gov/planetary/apod?api_key=apikey`
             );
             const data = await res.json();
             setPhotoData(data);
